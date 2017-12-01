@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Dime with Devine</title>
+
+	<meta charset="utf-8"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<header>
+
+		<center><h1>Dime with Devine</h1>
+
+</header>
+
+<body>
+
+<div class="navbar">
+
+   <a href="https://jdevine144.github.io/ecommercepage.htm">Home Page</a>
+
+  <a href="https://jdevine144.github.io/contactus.htm">Contact Us</a>
+
+  <div class="dropdown">
+
+    <button class="dropbtn" onclick="myFunction()">Products
+
+      <i class="fa fa-caret-down"></i>
+
+    </button>
+
+    <div class="dropdown-content" id="myDropdown">
+
+      <a href="https://jessdevine10.github.io/Monograms.htm">Monograms</a>
+
+      <a href="https://jessdevine10.github.io/Jewerly.htm">Jewelry</a>
+
+    </div>
+
+  </div> 
+
+</div>
+
+
+
+
+<script>
+
+function myFunction() {
+
+    document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(e) {
+
+  if (!e.target.matches('.dropbtn')) {
+
+    var myDropdown = document.getElementById("myDropdown");
+
+      if (myDropdown.classList.contains('show')) {
+
+        myDropdown.classList.remove('show');
+
+      }
+
+  }
+
+}
+
+</script>
+
+
+
+
+<div class="container">
+
+<article>
+
+<p>
+
+<center>Welcome to Dime with Devine! We're so happy you're here - enjoy this shop and all it offers by indulging in quality products that aren't over priced, and perfect for a home or dorm! </p> <br/>
+
+
+
+
+<center>I started this store not too long ago when I came across ETSY. I decided to add my own little store and become apart of something bigger than myself. I love interacting with all customers and providing them with my handmade products! Our customers find the most out of these products and seem to love them and how long lasting they are - not to mention how great they look in a home. A variety of my work includes - wooden cutting boards with your choice of engravings, wooden monograms, monogram coasters, single pearled necklaces, canvases, etc.- You name it, we have it!<br/>The purpose of "Dime with Devine" is to create quality products for a reasonable amount. All our products are $20 or less! I truly hope you benefit out of your homemade item, and have it for years to come!  </p> <br/>
+
+
+
+
+<center>Below is the Etsy Logo where you can find my personal page inside the website, as well as some pictures of products that can be found in my shop. Enjoy!
+
+</p>
+
+</article>
+
+</div>
+
+<center><div class="w3-content w3-section" style="max-width:500px">
+
+  <center><img class="mySlides" src="pearl.jpg" style="width:100%">
+
+  <center><img class="mySlides" src="rings.jpg" style="width:100%">
+
+  <center><img class="mySlides" src="coasters.png" style="width:100%">
+
+   <center><img class="mySlides" src="stickers.jpg" style="width:100%">
+
+  
+
+</div>
+
+
+
+
+<script>
+
+var myIndex = 0;
+
+carousel();
+
+
+
+function carousel() {
+
+    var i;
+
+    var x = document.getElementsByClassName("mySlides");
+
+    for (i = 0; i < x.length; i++) {
+
+       x[i].style.display = "none";  
+
+    }
+
+    myIndex++;
+
+    if (myIndex > x.length) {myIndex = 1}    
+
+    x[myIndex-1].style.display = "block";  
+
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+
+}
+
+
+
+</script>
+
+<img src="Etsy-app-logo-design-icon.png" alt="ETSY logo"/>
+
+
+
+
+<p id="demo"></p>
+
+
+
+
+<center><script> 
+
+var d = new Date();
+
+document.getElementById("demo").innerHTML = "Today is: " + d.toDateString();
+
+</script>
+
+
+
+
+</body>
+
+</html>
