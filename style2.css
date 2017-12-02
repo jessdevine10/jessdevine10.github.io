@@ -13,9 +13,18 @@ div {
     width: 300px;  
     margin-bottom: 100px; 
     position: absolute; 
-    background-image: url("car.png"); 
+    background-image: url("car.png");
+   
 }
 
+.black {  
+    background-image: url("blackcar.png");
+
+    height: 500px; 
+    width: 300px;  
+    margin-bottom: 100px; 
+    position: absolute;
+}
 
 body {
 	background-color:#778899;
