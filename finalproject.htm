@@ -23,7 +23,7 @@
 	
     <div class="red"></div> 
 
-    <div class="black"></div>  
+    <div class="blue"></div>  
 
     <div2 onclick="switchLight(0);" class="light stop on" id="pause"></div2> 
 
@@ -57,17 +57,17 @@ function switchLight(lightNumber) {
         $(document).ready(function() { 
             $("#go").click(function() { 
                 var r = $('.red'), 
-                    b = $('.black'), 
+                    b = $('.blue'), 
                     wW = $(window).width(), 
                     rSpeed = Math.floor(Math.random() * wW + wW), 
                     bSpeed = Math.floor(Math.random() * wW + wW); 
                 switchLight(2); 
                 function winTest() { 
                     if (rSpeed > bSpeed) { 
-                        alert('Red car wins this race!!'); 
+                        alert('Red car wins the race!!'); 
                         reset(); 
                     } else { 
-                        alert('Black car wins this race!'); 
+                        alert('Blue car wins the race!'); 
                         reset(); 
                     } 
                     switchLight(0); 
@@ -105,4 +105,3 @@ function switchLight(lightNumber) {
 </body> 
 </html> 
 
-</html>

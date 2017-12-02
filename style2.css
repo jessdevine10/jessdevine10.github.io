@@ -17,8 +17,9 @@ div {
    
 }
 
-.black {  
-    background-image: url("car.png");
+.blue {  
+    background-image: url("bluecar.png"); 
+    top: 400px;
 }
 
 body {
