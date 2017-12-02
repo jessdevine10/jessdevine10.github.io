@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Dime with Devine</title>
+	<meta charset="utf-8"/>
+</head>
+<header>
+	<center><h1>Dime with Devine</h1>
+	<center><h2>Contact Us</h2>
+</header>
+<body>
+
+<div class="navbar">
+   <a href="https://jessdevine10.github.io/ecommercepage.htm">Home Page</a>
+  <a href="https://jessdevine10.github.io/contactus.htm">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="https://jessdevine10.github.io/Monograms.htm">Monograms</a>
+      <a href="https://jessdevine10.github.io/Jewerly.htm">Jewelry</a>
+    </div>
+  </div> 
+</div>
+
+
+
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<div class="container">
+<article>
+<center><p>Thank you for using Dime with Devine! Please complete the form below, so we can provide quick and efficient service regarding your item.<br/>
+You will recieve an emailed response back within 4 days of submitting your form to us.</p>
+
+<center><script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm"]["lastname"].value;   
+    var z = document.forms["myForm"]["email"].value;
+    if (x == "") {
+        alert("Criteria must be filled out");
+        return false;
+    	}
+	 if (y == "") {
+        alert("Last Name must be filled out");
+        return false;
+	}
+	 if (z == "") {
+        alert("Email must be filled out");
+        return false;
+	}
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action=""
+onsubmit="return validateForm()" method="get"><br>
+First Name: <input type="text" name="fname"><br>
+Last Name: <input type="text" name="lastname"><br>
+Email: <input type="text" name="email"><br>
+<input type="radio" value="question">Question<br>
+<input type="radio" value="problem">Problem<br>
+<input type="radio" value="orderstatusupdate">Order Status Update<br>
+<textarea rows="4" cols="30" name="comment" form="usrform">
+Comments...</textarea><br>
+<input type="submit" value="Submit">
+<form action="https://jessdevine10.github.io/contactus.htm"><button type="Reset" value="Reset">Reset</button>
+</form>
+</p>
+</article>
+</div>
+
+<center><p id="demo"></p>
+
+<center><script> 
+var d = new Date();
+document.getElementById("demo").innerHTML = "Today is: " + d.toDateString();
+</script>
+</body>
+</html>

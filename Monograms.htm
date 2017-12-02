@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Dime with Devine</title>
+	<meta charset="utf-8"/>
+</head>
+<header>
+	<center><h1>Dime with Devine</h1>
+	<center><h2>Monograms</h2>
+</header>
+<body>
+
+<div class="navbar">
+   <a href="https://jessdevine10.github.io/ecommercepage.htm">Home Page</a>
+  <a href="https://jessdevine10.github.io/contactus.htm">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="https://jessdevine10.github.io/Monograms.htm">Monograms</a>
+      <a href="https://jessdevine10.github.io/Jewerly.htm">Jewelry</a>
+    </div>
+  </div> 
+</div>
+
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<div class="container">
+<article>
+<p><table border="1" cellpadding="2.5" cell spacing="4">
+	<tr><center>
+	    <td><img class="resize" src="monogram.png" alt="Wooden Monogram"/>
+	    <th>Wooden Monogram</th>
+	    <td>$17</td>
+	    <td>Wooden monograms come in two sizes - height:25', width:30', or height:30', height:25'. Monogram comes wooden, it is not painted beforehand.</td>
+	</tr>
+	<tr>
+	    <td><img src="coasters.png" alt="Monogram Coasters"/>
+	    <th>Monogram Coasters</th>
+	    <td>$5</td>
+	    <td> Coasters come in colors - blue, pink, purple, white, and black. You can mix and match colors to create the perfect coaster. They're wonderful for dorms and apartments!</td>
+	</tr>
+	<tr>
+	    <td><img src="board.jpg" alt="Engraved Cutting Board"/>	    
+	    <th>Engraved Cutting Board</th>
+	    <td>$18.50</td>
+	    <td>Customized engravings include name, date, initials, and/or a design or your choice. MOst commonly purchased for wedding or engagement presents.</td>
+	</tr>
+	<tr>
+	    <td><img src="stickers.jpg" alt="Monogram Stickers"/>	   
+	    <th>Monogram Stickers</th>
+	    <td>$3.50</td>
+	    <td>Perfect decal for a car, notebook, or laptop! You can get your monogram in white, teal, pink, or black - either solid color or you can get a design in it. Great way to customize your belongings.</td>
+	</tr>
+	<tr>
+	    <td><img src="tervis.png" alt="Monogram Tervis"/>		    
+	    <th>Tervis Monogram</th>
+	    <td>$13.75</td>
+	    <td>32 oz. tervis cup with your choice of monogram or name. If you're going to the beach, this is a must have!</td>
+	</tr>
+	</p>
+	</table>
+</article>
+
+</div>
+
+<center><p id="demo"></p>
+
+<center><script> 
+var d = new Date();
+document.getElementById("demo").innerHTML = "Today is: " + d.toDateString();
+</script>
+</body>
+</html>
