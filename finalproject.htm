@@ -6,15 +6,12 @@
 <head> 
 
     <meta charset="utf-8"> 
-
     <meta name="description" content="HTML5 Template"> 
-
     <link rel="stylesheet" type="text/css" href="style2.css"> 
-
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <center><h1>The Great Race</h1>
-   <center<h3>click the green light to begin</h3> 
+  <center><h1>The Great Race</h1>
+   <center<h3>click on the green light to start the race. </h3> 
 
 </head> 
 
@@ -29,8 +26,6 @@
 </body>
 
 <script type="text/javascript">
-
-
 var LIGHTS = document.getElementsByClassName("light");
 function allOff() { 
   for (var i=0; i<LIGHTS.length; i = i+1) { 
@@ -70,7 +65,7 @@ function switchLight(lightNumber) {
                     var rAnim = r.animate({ 
                         left: rSpeed 
                     }, { 
-                        duration: 650, 
+                        duration: 635, 
                         done: function() { 
                             bAnim.stop(); 
                             winTest(); 
@@ -79,7 +74,7 @@ function switchLight(lightNumber) {
                     var bAnim = b.animate({ 
                         left: bSpeed 
                     }, { 
-                        duration: 650, 
+                        duration: 635, 
                         done: function() { 
                             rAnim.stop(); 
                             winTest(); 
