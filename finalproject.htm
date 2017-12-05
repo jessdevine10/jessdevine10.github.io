@@ -14,8 +14,6 @@
    <center<h3>click on the green light to start the race. </h3> 
 
 </head> 
-
-
 <center><body> 
 	
     <div class="red"></div> 
@@ -85,8 +83,8 @@ function switchLight(lightNumber) {
                 function reset() { 
                     rSpeed = 0; 
                     bSpeed = 0; 
-                    r.css('left'); 
-                    b.css('left'); 
+                    r.css('left', 0); 
+                    b.css('left', 0); 
                 } 
             }); 
         }); 
