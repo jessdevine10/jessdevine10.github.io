@@ -65,19 +65,19 @@ function switchLight(lightNumber) {
                     var rAnim = r.animate({ 
                         left: rSpeed 
                     }, { 
-                        duration: 635, 
+                        duration: 600, 
                         done: function() { 
-                            bAnim.stop(); 
-                            winTest(); 
+                            bAnim.stop(300); 
+                            winTest(300); 
                         } 
                     }); 
                     var bAnim = b.animate({ 
                         left: bSpeed 
                     }, { 
-                        duration: 635, 
+                        duration: 600, 
                         done: function() { 
-                            rAnim.stop(); 
-                            winTest(); 
+                            rAnim.stop(300); 
+                            winTest(300); 
                         } 
                     }); 
                 } 
@@ -85,8 +85,8 @@ function switchLight(lightNumber) {
                 function reset() { 
                     rSpeed = 0; 
                     bSpeed = 0; 
-                    r.css('left', 0); 
-                    b.css('left', 0); 
+                    r.css('left'); 
+                    b.css('left'); 
                 } 
             }); 
         }); 
